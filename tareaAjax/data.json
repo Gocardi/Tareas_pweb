@@ -1,0 +1,101 @@
+{
+    "regiones": [
+      {
+        "nombre": "Amazonas",
+        "casos": [100, 150, 200, 250, 300]
+      },
+      {
+        "nombre": "Áncash",
+        "casos": [200, 250, 300, 350, 400]
+      },
+      {
+        "nombre": "Apurímac",
+        "casos": [50, 75, 100, 125, 150]
+      },
+      {
+        "nombre": "Arequipa",
+        "casos": [300, 350, 400, 450, 500]
+      },
+      {
+        "nombre": "Ayacucho",
+        "casos": [150, 200, 250, 300, 350]
+      },
+      {
+        "nombre": "Cajamarca",
+        "casos": [250, 300, 350, 400, 450]
+      },
+      {
+        "nombre": "Cusco",
+        "casos": [200, 250, 300, 350, 400]
+      },
+      {
+        "nombre": "Huancavelica",
+        "casos": [100, 150, 200, 250, 300]
+      },
+      {
+        "nombre": "Huánuco",
+        "casos": [150, 200, 250, 300, 350]
+      },
+      {
+        "nombre": "Ica",
+        "casos": [250, 300, 350, 400, 450]
+      },
+      {
+        "nombre": "Junín",
+        "casos": [200, 250, 300, 350, 400]
+      },
+      {
+        "nombre": "La Libertad",
+        "casos": [300, 350, 400, 450, 500]
+      },
+      {
+        "nombre": "Lambayeque",
+        "casos": [350, 400, 450, 500, 550]
+      },
+      {
+        "nombre": "Lima",
+        "casos": [500, 600, 700, 800, 900]
+      },
+      {
+        "nombre": "Loreto",
+        "casos": [400, 450, 500, 550, 600]
+      },
+      {
+        "nombre": "Madre de Dios",
+        "casos": [50, 75, 100, 125, 150]
+      },
+      {
+        "nombre": "Moquegua",
+        "casos": [100, 150, 200, 250, 300]
+      },
+      {
+        "nombre": "Pasco",
+        "casos": [50, 75, 100, 125, 150]
+      },
+      {
+        "nombre": "Piura",
+        "casos": [400, 450, 500, 550, 600]
+      },
+      {
+        "nombre": "Puno",
+        "casos": [200, 250, 300, 350, 400]
+      },
+      {
+        "nombre": "San Martín",
+        "casos": [300, 350, 400, 450, 500]
+      },
+      {
+        "nombre": "Tacna",
+        "casos": [150, 200, 250, 300, 350]
+      },
+      {
+        "nombre": "Tumbes",
+        "casos": [100, 150, 200, 250, 300]
+      },
+      {
+        "nombre": "Ucayali",
+        "casos": [200, 250, 300, 350, 400]
+      }
+    ]
+  }
+  
