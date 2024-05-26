@@ -1,0 +1,12 @@
+-- Crear una tabla de películas
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    year INTEGER NOT NULL,
+    rating REAL
+);
+
+-- Insertar datos de ejemplo
+INSERT INTO movies (title, year, rating) VALUES ('The Shawshank Redemption', 1994, 9.3);
+INSERT INTO movies (title, year, rating) VALUES ('The Godfather', 1972, 9.2);
+INSERT INTO movies (title, year, rating) VALUES ('The Dark Knight', 2008, 9.0);
