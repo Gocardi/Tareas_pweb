@@ -1,16 +1,13 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
-  <head>
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Bienvenido a la pagina principal</h1>
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to Home Page</h1>
     <p>User: {{ request.user }}</p>
     {% if request.user.is_authenticated %}
-      <p>Authenticates user</p>
+        <p>Authenticated User</p>
     {% else %}
-      <p>Anonimus User</p>
+        <p>Anonymous User</p>
     {% endif %}
-  </body>
-</html>
+{% endblock %}
