@@ -7,5 +7,10 @@
   <body>
     <h1>Bienvenido a la pagina principal</h1>
     <p>User: {{ request.user }}</p>
+    {% if request.user.is_authenticated %}
+      <p>Authenticates user</p>
+    {% else %}
+      <p>Anonimus User</p>
+    {% endif %}
   </body>
 </html>
