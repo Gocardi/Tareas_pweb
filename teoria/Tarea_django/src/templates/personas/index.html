@@ -5,11 +5,11 @@
     <title>Página de inicio</title>
 </head>
 <body>
-    <h1>Nombres:</h1>
+    <h1>Nombres en mayúsculas:</h1>
     {% if mostrar_nombres %}
     <ul>
         {% for nombre in nombres %}
-        <li>{{ nombre }}</li>
+        <li>{{ nombre|upper }}</li>
         {% endfor %}
     </ul>
     {% else %}
