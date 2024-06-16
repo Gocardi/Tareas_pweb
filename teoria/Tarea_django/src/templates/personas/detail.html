@@ -1,0 +1,19 @@
+<!-- personas/templates/personas/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de inicio</title>
+</head>
+<body>
+    <h1>Nombres en mayúsculas:</h1>
+    {% if mostrar_nombres %}
+    <ul>
+        {% for nombre in nombres %}
+        <li>{{ nombre|upper }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No hay nombres para mostrar.</p>
+    {% endif %}
+</body>
+</html>

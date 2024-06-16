@@ -20,5 +20,6 @@ from inicio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home')
+    path('', views.index, name='index'),
+    path('persona/<int:persona_id>/', views.persona_detail, name='persona_detail'),
 ]
