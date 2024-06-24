@@ -1,5 +1,32 @@
 from django.shortcuts import render, redirect
-from .forms import Persona
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from .models import Persona
+
+class PersonaListView(ListView):
+    model = Persona
+    template_name = 'personas/persona_list.html'
+
+class PersonaDetailView(DetailView):
+    model = Persona
+    template_name = 'personas/persona_detail.html'
+
+class PersonaCreateView(CreateView):
+    model = Persona
+    fields = ['nombre', 'edad', 'email']
+    template_name = 'personas/persona_form.html'
+    success_url = reverse_lazy('personas:lista')
+
+class PersonaUpdateView(UpdateView):
+    model = Persona
+    fields = ['nombre', 'edad', 'email']
+    template_name = 'personas/persona_form.html'
+    success_url = reverse_lazy('personas:lista')
+
+class PersonaDeleteView(DeleteView):
+    model = Persona
+    template_name = 'personas/persona_confirm_delete.html'
+    success_url = reverse_lazy('personas:lista')
 
 def crear_persona(request):
     if request.method == 'POST':
