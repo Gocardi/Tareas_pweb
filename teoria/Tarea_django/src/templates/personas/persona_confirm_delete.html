@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmar Borrar Persona</title>
+</head>
+<body>
+    <h1>¿Está seguro de que desea borrar {{ object.nombre }}?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Borrar</button>
+    </form>
+    <a href="{% url 'personas:detalle' object.pk %}">Cancelar</a>
+</body>
+</html>
