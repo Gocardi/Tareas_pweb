@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Personas</title>
+</head>
+<body>
+    <h1>Lista de Personas</h1>
+    <ul>
+        {% for persona in object_list %}
+            <li><a href="{% url 'personas:detalle' persona.pk %}">{{ persona.nombre }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'personas:crear' %}">Crear Persona</a>
+</body>
+</html>
